@@ -18,7 +18,6 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:flybbjcs70/pm2-demo.git',
       path : '/github-resposity/pm2-demo',
-      ssh_options: "StrictHostKeyCheking=no",
       "pre-setup" : "echo 'this is a pre-setup command'",
        "post-setup":"ls -la",
 
