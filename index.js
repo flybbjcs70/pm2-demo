@@ -16,6 +16,6 @@ app.use('*',(request,response)=>{
     response.end()
 })
 
-app.listen(3000, function(){
+app.listen(3000,'0.0.0.0', function(){
     console.log('server start@127.0.0.1:3000')
 })
