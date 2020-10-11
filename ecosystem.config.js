@@ -22,7 +22,7 @@ module.exports = {
        "post-setup":"ls -la",
 
       'pre-deploy-local': "echo 'This is a pre-deloy-local command'",
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'git pull origin master && npm install && pm2 start 0',
     }
   }
 };

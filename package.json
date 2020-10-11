@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "pm2 start index.js",
+    "sp" : "pm2 deploy ecosystem.config.js proudction setup",
+    "dp" : "pm2 deploy ecosystem.config.js production",
+    "ud" : "pm2 deploy production update"
   },
   "keywords": [],
   "author": "",
